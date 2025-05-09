@@ -197,7 +197,7 @@ module ActionView
       end
     end
 
-    if [4, 5, 6].include? Rails::VERSION::MAJOR
+    if Rails::VERSION::MAJOR >= 4
       module Tags
         class Base
           def to_region_select_tag(parent_region, options = {}, html_options = {})
